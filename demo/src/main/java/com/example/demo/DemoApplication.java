@@ -13,16 +13,29 @@ public class DemoApplication {
     public static void main(String[] args) {
 
 
-        Marks m1 = new Marks();
-        m1.setEngmarks(85.5);
-        m1.setMathmarks(90.0);
-        m1.setScimarks(88.0);
-        student s1 = new student();
-        s1.setid(12);
-        s1.setname("Azzam");
-        s1.setStudentClass("Bscs");
-        s1.setStudentMarks(m1);
+        Student s1 = new Student();
+s1.setId(12);
+s1.setName("Azzam");
+s1.setStudentClass("BSCS");
 
+StudentMarks m1 = new StudentMarks();
+m1.setSubject("ENGLISH");
+m1.setMarks(85.5);
+m1.setStudent(s1);
+
+StudentMarks m2 = new StudentMarks();
+m2.setSubject("MATH");
+m2.setMarks(90.0);
+m2.setStudent(s1);
+
+StudentMarks m3 = new StudentMarks();
+m3.setSubject("SCIENCE");
+m3.setMarks(88.0);
+m3.setStudent(s1);
+
+s1.getMarksList().add(m1);
+s1.getMarksList().add(m2);
+s1.getMarksList().add(m3);
 
         StandardServiceRegistry ssr =
                 new StandardServiceRegistryBuilder()

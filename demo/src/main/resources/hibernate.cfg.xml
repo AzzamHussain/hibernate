@@ -9,6 +9,8 @@
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">azz@mubit2022</property>
         <property name="hibernate.hbm2ddl.auto">create</property>
-        <mapping class="com.example.demo.student"/>
+        <mapping class="com.example.demo.Student"/>
+        <mapping class="com.example.demo.StudentMarks"/>
+
     </session-factory>
 </hibernate-configuration>
