@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import jakarta.persistence.Embedded;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
@@ -9,6 +10,8 @@ public class student {
     private int id;
     private String name;
     private String StudentClass;
+    @Embedded
+    private Marks studentMarks;  
     public int getid() {
         return id;       
         }
@@ -26,6 +29,12 @@ public class student {
         }
         public void setStudentClass(String StudentClass) {
         this.StudentClass = StudentClass;
+        }
+          public Marks getStudentMarks() {
+        return studentMarks;
+        }
+        public void setStudentMarks(Marks studentMarks) {
+        this.studentMarks = studentMarks;
         }
     }
 

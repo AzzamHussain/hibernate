@@ -12,10 +12,17 @@ public class DemoApplication {
 
     public static void main(String[] args) {
 
+
+        Marks m1 = new Marks();
+        m1.setEngmarks(85.5);
+        m1.setMathmarks(90.0);
+        m1.setScimarks(88.0);
         student s1 = new student();
         s1.setid(12);
-        s1.setname("John Doe");
-        s1.setStudentClass("10th Grade");
+        s1.setname("Azzam");
+        s1.setStudentClass("Bscs");
+        s1.setStudentMarks(m1);
+
 
         StandardServiceRegistry ssr =
                 new StandardServiceRegistryBuilder()

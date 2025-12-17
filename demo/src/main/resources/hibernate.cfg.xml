@@ -8,7 +8,7 @@
         <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/college</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">azz@mubit2022</property>
-        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.hbm2ddl.auto">create</property>
         <mapping class="com.example.demo.student"/>
     </session-factory>
 </hibernate-configuration>
